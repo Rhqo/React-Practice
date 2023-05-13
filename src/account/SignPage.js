@@ -3,7 +3,7 @@ import Header from '../header';
 import Footer from '../footer';
 import SigninForm from './signin';
 import SignupForm from './signup';
-import './login.css';
+import './sign.css';
 import { useLocation } from 'react-router-dom';
 import React from 'react';
 

@@ -4,7 +4,7 @@ import './home/HomePage'
 
 function Header() {
     return (
-        <header>
+        <header class="d-flex align-items-center p-2 border-bottom">
             <meta charset="UTF-8"></meta>
             <meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
             <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>

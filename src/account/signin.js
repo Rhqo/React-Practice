@@ -1,48 +1,37 @@
-import React from 'react';
+import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-class SigninForm extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      Id: '',
-      Password: ''
-    };
+function SigninForm() {
+  const [Id, setId] = useState('');
+  const [Password, setPassword] = useState('');
 
-    this.handleID = this.handleID.bind(this);
-    this.handlePW = this.handlePW.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
+  const handleID = (event) => {
+    setId(event.target.value);
+  }
+  const handlePW = (event) => {
+    setPassword(event.target.value);
   }
 
-  handleID(event) {
-    this.setState({Id: event.target.value});
-  }
-  handlePW(event) {
-    this.setState({Password: event.target.value});
-  }
-
-  handleSubmit(event) {
+  const handleSubmit = (event) => {
     event.preventDefault();
-    alert(JSON.stringify(this.state))
+    alert(JSON.stringify({ Id, Password }))
   }
 
-  render() {
     return (
-      <form class="login-form" onSubmit={this.handleSubmit}>
+      <form class="login-form" onSubmit={handleSubmit}>
         <label>
           <div class="form-floating">
-            <input type="ID" placeholder='ID' class="form-control" value={this.state.Id} onChange={this.handleID} />
+            <input type="ID" placeholder='ID' class="form-control" value={Id} onChange={handleID} />
             <label for="floatingInput">ID</label>
           </div>
           <div class="form-floating">
-            <input type="password" placeholder='Password' class="form-control" value={this.state.Password} onChange={this.handlePW} />
+            <input type="password" placeholder='Password' class="form-control" value={Password} onChange={handlePW} />
             <label for="floatingPassword">Password</label>
           </div>
         </label>
         <input type="submit" class="w-100 btn btn-lg btn-primary mb-lg-5" value="Submit" />
       </form>
     );
-  }
 }
 
 export default SigninForm;

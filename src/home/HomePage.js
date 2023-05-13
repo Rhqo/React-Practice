@@ -28,7 +28,7 @@ const Home = () => {
               <p>Ready to beyond the starter template? Check out these open source projects that you can quickly duplicate to a new GitHub repository.</p>
               <ul className="icon-list ps-0">
                 <li className="text-muted d-flex align-items-start mb-1">This is pracice</li>
-                <li className="d-flex align-items-start mb-1"><a href="https://github.com/twbs/bootstrap-npm-starter" rel="noopener" target="_blank">Bootstrap npm starter</a></li>
+                <li className="d-flex align-items-start mb-1"><a href="https://github.com/twbs/bootstrap-npm-starter">Bootstrap npm starter</a></li>
               </ul>
             </div>
 

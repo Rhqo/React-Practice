@@ -1,6 +1,6 @@
 import React from "react";
 import HomePage from "./home/HomePage";
-import SigninPage from "./account/SignPage";
+import SignPage from "./account/SignPage";
 import { Routes, Route } from 'react-router-dom'
 
 function App() {
@@ -8,8 +8,8 @@ function App() {
     <>
       <Routes>
         <Route path="/" Component={HomePage} />
-        <Route path="/account/signin" Component={SigninPage}/>
-        <Route path="/account/signup" Component={SigninPage}/>
+        <Route path="/account/signin" Component={SignPage}/>
+        <Route path="/account/signup" Component={SignPage}/>
         <Route />
       </Routes>
     </>

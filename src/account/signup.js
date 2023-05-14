@@ -42,7 +42,7 @@ function SignupForm() {
   };
 
   useEffect (() => {
-    if (password === '' && verifyPassword.value === ''){
+    if (password === '' || verifyPassword.value === ''){
       setBtn({value: 'Disabled', class: 'w-100 btn btn-lg btn-primary mb-lg-5 disabled'});
       setVerifyPassword({value:verifyPassword.value, class: 'form-control', style: { color: '' }});
     }

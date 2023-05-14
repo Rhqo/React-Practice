@@ -18,7 +18,7 @@ function SigninForm() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    //alert(JSON.stringify({ Id, Password }))
+    alert(JSON.stringify({ Id, Password }))
     if (Id === 'admin' && Password === '1234') {
       alert('로그인 성공');
       window.location.href = '/memo';

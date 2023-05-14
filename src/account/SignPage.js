@@ -27,7 +27,7 @@ const Sign = () => {
     <div>
       <Header />
         <div class="col-lg-8 mx-auto mt-4 p-4 py-md-5">
-        <span class="textsize30">{title}</span>
+        <span class="login-box">{title}</span>
         <main class="main-box">
           {context}
         </main>

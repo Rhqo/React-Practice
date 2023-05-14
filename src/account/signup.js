@@ -38,7 +38,7 @@ function SignupForm() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    alert(JSON.stringify({ id, password, verifyPassword }));
+    alert(JSON.stringify({ id, password }));
   };
 
   useEffect (() => {

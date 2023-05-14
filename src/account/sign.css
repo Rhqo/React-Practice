@@ -4,17 +4,23 @@ div {
     /* border: 2px solid black; */
 }
 
-.textsize30 {
+.login-box {
+    display: flex; 
+    flex-direction: column; 
+    height: 60px; 
+    width: 400px; 
     font-size: 30px; 
     margin: 0 auto;
 }
 
 .main-box {
     display: flex; 
-    flex-direction: row; 
+    align-items: center;
+    flex-direction: column; 
     height: 100%; 
     width: 400px; 
     margin: 0 auto;
+
 }
 
 .login-form {

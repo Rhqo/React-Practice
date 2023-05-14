@@ -48,6 +48,17 @@ const MemoList = () => {
     context: 'This is memo 1',
   };
 
+  if(currentMemoId === null && memoList.length === 0) {
+    memoSpecObj.id = 0;
+    memoSpecObj.title = 'Make a new memo!';
+    memoSpecObj.context = 'I wll show you the contents here.';
+  }
+  else if(currentMemoId === null) {
+    memoSpecObj.id = 0;
+    memoSpecObj.title = 'Select Memo';
+    memoSpecObj.context = 'Please select memo from left list';
+  }
+
   return (
     <>
     <div>

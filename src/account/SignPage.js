@@ -18,9 +18,6 @@ const Sign = () => {
     title = "Sign up";
     context = <SignupForm />;
   }
-  else {
-    title = "404 Not Found";
-  }
   
   return (
     <>
